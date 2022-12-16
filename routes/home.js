@@ -16,8 +16,8 @@ router.get("/home/contactUs",(req,res) => {
 router.post("/home/contactUs", async (req,res) => {
     try
     {
-        const review = req.body.review;
-        const newContact = new Contact(review);
+        const contact = req.body.contact;
+        const newContact = new Contact(contact);
         await newContact.save();
         req.flash("success", "Your reply has been sent successfully");
         res.redirect("/home/contactUs")
