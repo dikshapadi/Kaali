@@ -38,7 +38,7 @@ body{
 .container{
     max-width: 1100px;
     margin:auto;
-    padding: 0 3rem;
+    padding: 20px;
     margin-top: 4rem;
     text-align: center;
 }
@@ -598,4 +598,7 @@ body {
   
   .our_team .team_member .member_img:hover .social_media{
     transform: scale(1);
+  }
+  p{
+    color: black;
   }
