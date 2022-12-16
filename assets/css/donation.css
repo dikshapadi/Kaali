@@ -1,5 +1,6 @@
 body{
-  background-image: url(/assets/images/donation.webp);
+  /* background-image: url(/assets/images/donation.webp); */
+  background-color: white;
     background-size: cover;
 }
 .header {
