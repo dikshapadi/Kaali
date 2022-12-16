@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="/assets/css/register.css">
+<div class="wrapper">
+    <div class="title">
+      LET'S VOLUNTEER!
+    </div>
+    <form action="/volunteerReq/registerVol" method="POST">
+    <div class="form">
+       <div class="inputfield">
+          <label>Name</label>
+          <input name="volunteer[Name]" type="text" class="input">
+       </div>  
+       
+        <div class="inputfield">
+          <label>Category</label>
+          <div class="custom_select">
+            <select>
+              <option value="">Select</option>
+              <option name="volunteer[Category]">Crisis Line Specialist</option>
+              <option name="volunteer[Category]" >Legal Advisor</option>
+              <option name="volunteer[Category]">Community Educator</option>
+              <option name="volunteer[Category]" >Fundraising Intern</option>
+              <option name="volunteer[Category]" >Social Media Intern</option>
+              <option name="volunteer[Category]">Data and Research Intern</option>
+            </select>
+          </div>
+       </div> 
+        <div class="inputfield">
+          <label>Email Address</label>
+          <input name="volunteer[address]" type="text" class="input">
+       </div> 
+      <div class="inputfield">
+          <label>Phone Number</label>
+          <input name="volunteer[phone]" type="text" class="input">
+       </div> 
+      <div class="inputfield">
+          <label>Date of Join</label>
+          <input name="volunteer[date]" type="date" class="input">
+       </div> 
+    
+      <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <p>I've read the role description</p>
+       </div> 
+      <div class="inputfield">
+        <input type="submit" value="Apply" class="btn">
+      </div>
+    </div>
+  </form>
+</div>

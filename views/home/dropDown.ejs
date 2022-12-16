@@ -1,0 +1,145 @@
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/maindropDown.css" />
+    <link rel="stylesheet" href="/assets/css/trans.css" />
+  </head>
+</head>
+<section class="header">
+  <div class="header">
+    </div>
+  
+    <section class="section1">
+      <div class="part1">
+        <p class="heading">SHELTERS.</p>
+        <p class="line  ">A Safe Space.</p>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="part2">
+        <p>A women's shelter is a place of temporary protection  and support for women escaping domestic violence 
+          and intimate partner violence of all forms. When you feel unsafe everywhere, safety starts here. Find a 
+        new life, a new you, at a shelter today.</p>
+      </div>
+    </section>
+    <section class="section3">
+      <div class="part3">
+        <p class="choose">Choose Your City and find the top shelter:</p>
+      </div>
+    </section>
+    <section class="section4">
+    <div class="dropdown">
+      <div class="select">
+        <span class="selected">Karnataka</span>
+        <div class="caret"></div>
+      </div>
+      <ul class="menu">
+        <a style="text-decoration: none" href="./andhra.html"
+          ><li>Andhra Pradesh</li></a
+        >
+        <a style="text-decoration: none" href="./aruna.html"
+          ><li>Arunachal Pradesh</li></a
+        >
+
+        <a style="text-decoration: none" href="./assam.html"><li>Assam</li></a>
+
+        <a style="text-decoration: none" href="./bih.html"><li>Bihar</li></a>
+        <a style="text-decoration: none" href="./chatt.html"
+          ><li>Chhattisgarh</li></a
+        >
+        <a style="text-decoration: none" href="./goa.html"><li>Goa</li></a>
+        <a style="text-decoration: none" href="./guj.html"><li>Gujarat</li></a>
+        <a style="text-decoration: none" href="./hary.html"><li>Haryana</li></a>
+        <a style="text-decoration: none" href="./hima.html"
+          ><li>Himachal Pradesh</li></a
+        >
+        <a style="text-decoration: none" href="./jhar.html"
+          ><li>Jharkhand</li></a
+        >
+        <a style="text-decoration: none" href="./banga.html"
+          ><li class="active">Karnataka</li></a
+        >
+        <a style="text-decoration: none" href="./kerala.html"
+          ><li class="active">Kerala</li></a
+        >
+        <a style="text-decoration: none" href="./madhyap.html"
+          ><li class="active">Madhya Pradesh</li></a
+        >
+        <a style="text-decoration: none" href="./maha.html"
+          ><li class="active">Maharashtra</li></a
+        >
+        <a style="text-decoration: none" href="./mani.html"
+          ><li class="active">Manipur</li></a
+        >
+        <a style="text-decoration: none" href="./megh.html"
+          ><li class="active">Meghalaya</li></a
+        >
+        <a style="text-decoration: none" href="./mizoram.html"
+          ><li class="active">Mizoram</li></a
+        >
+        <a style="text-decoration: none" href="./naga.html"
+          ><li class="active">Nagaland</li></a
+        >
+        <a style="text-decoration: none" href="./1.html"
+          ><li class="active">Odisha</li></a
+        >
+        <a style="text-decoration: none" href="./2.html"
+          ><li class="active">Punjab</li></a
+        >
+        <a style="text-decoration: none" href="./3.html"
+          ><li class="active">Rajasthan</li></a
+        >
+        <a style="text-decoration: none" href="./4.html"
+          ><li class="active">Sikkim</li></a
+        >
+        <a style="text-decoration: none" href="./5.html"
+          ><li class="active">Tamil Nadu</li></a
+        >
+        <a style="text-decoration: none" href="./6.html"
+          ><li class="active">Telangana</li></a
+        >
+        <a style="text-decoration: none" href="./7.html"
+          ><li class="active">Tripura</li></a
+        >
+        <a style="text-decoration: none" href="./8.html"
+          ><li class="active">Uttar Pradesh</li></a
+        >
+        <a style="text-decoration: none" href="./9.html"
+          ><li class="active">Uttarakhand</li></a
+        >
+        <a style="text-decoration: none" href="./10.html"
+          ><li class="active">West Bengal</li></a
+        >
+      </ul>
+    </div>
+    <script>
+      const dropdowns = document.querySelectorAll(".dropdown");
+      dropdowns.forEach((dropdown) => {
+        const select = dropdown.querySelector(".select");
+        const caret = dropdown.querySelector(".caret");
+        const menu = dropdown.querySelector(".menu");
+        const options = dropdown.querySelectorAll(".menu li");
+        const selected = dropdown.querySelector(".selected");
+
+        select.addEventListener("click", () => {
+          select.classList.toggle("select-clicked");
+          caret.classList.toggle("caret-rotate");
+          menu.classList.toggle("menu-open");
+        });
+        options.forEach((option) => {
+          option.addEventListener("click", () => {
+            selected.innerText = option.innerText;
+            select.classList.remove("select-clicked");
+            caret.classList.remove("caret-rotate");
+            menu.classList.remove("menu-open");
+            options.forEach((option) => {
+              option.classList.remove("active");
+            });
+            option.classList.add("active");
+          });
+        });
+      });
+    </script>
+</section>

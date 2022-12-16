@@ -1,0 +1,335 @@
+<head>
+    <meta charset="utf-8">
+    <title>Kaali</title>
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/7aa1c87325.js" crossorigin="anonymous"></script>
+    <style>
+      .center {
+        text-align: center;
+        width: 100%;
+      }
+    </style>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    </head>
+  
+    <body>
+        <nav>
+            <section class="header">
+                <div class="header">
+                        <button type="button" onclick="openPopup()">Help</button> 
+                    <div class="popup" id="popup">
+                      <button class="close-btn" onclick="closePopup()">&times;</button>
+                        <h1>#YouAreNotAlone</h1>
+                        <ul style="list-style-type:none;" >
+                          <a href="/home/contactUs"><li><h1>Crisis Helpine</h1></li></a>
+                          <a href="/home/map"><li><h1>Kaali Centres</h1></li></a>
+                          <a href="/home/shelter"><li><h1>Shelters</h1></li></a>
+                          </ul>
+                          <script>
+                        let popup=document.getElementById("popup");
+                        function openPopup(){
+                          popup.classList.add("open-popup");
+                        }
+                        function closePopup(){
+                          popup.classList.remove("open-popup");
+                        }
+                      </script>
+                      </div>
+                  <div class="innerheader">
+                      <img src="/assets/images/newlogo.png" alt="">
+                  </div>
+                </div>
+        </nav>
+        <section class="mid">
+          <div class="midsec">
+            <ul class="nav" id="nav">
+              
+              <li><a href="/home/aboutUs">About Us</a></li>
+              <li><a href="/volunteerReq/volunteer">Volunteers</a></li>
+              <li><a href="/donations/donation">Donations</a></li>
+              <li><a href="/home/blog">Blogs</a></li>
+              <li><a href="/home/gallery">Gallery</a></li>
+              <li><a href="/home/contactUs">Contact Us</a></li>
+            </ul>
+          </div>
+        </section>
+      
+        <section class="section1">
+          <div class="part1">
+          <div class="slider">
+            <div class="slides">
+              <input type="radio" name="radio-btn" id="radio1">
+              <input type="radio" name="radio-btn" id="radio2">
+              <input type="radio" name="radio-btn" id="radio3">
+              <input type="radio" name="radio-btn" id="radio4">
+      
+              <div class="slide first">
+                <img src="/assets/images/slide1.jpeg">
+              </div>
+              <div class="slide"> 
+                <img src="/assets/images/slide2.jpg" alt="">
+              </div>
+              <div class="slide">
+                <img src="/assets/images/slide3.jpg" alt="">
+              </div>
+              <div class="slide">
+                <img src="/assets/images/slide4.jpg" alt="">
+              </div>
+      
+              <div class="navigation-auto">
+                <div class="auto-btn-1"></div>
+                <div class="auto-btn-2"></div>
+                <div class="auto-btn-3"></div>
+                <div class="auto-btn-4"></div>
+              </div>
+            </div>
+      
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+            </div>
+      
+          </div>
+          <br>
+          <br>
+          <script type="text/javascript">
+            var counter = 1;
+            setInterval(function() {
+              document.getElementById('radio' + counter).checked = true;
+              counter++;
+              if (counter > 4) {
+                counter = 1;
+              }
+            }, 5000);
+          </script>
+          </div>
+        </section>
+        
+        
+        <section class="section2">
+          <div class="counterstrip">
+            <ul>
+              <li> <div class="counter">
+                <span class="num" data-val="500">000</span>
+                <span class="text">+Calls<br>Received</span>
+              </div>
+              <li> <div class="counter">
+                <span class="num" data-val="500">000</span>
+                <span class="text">+People<br>Trained</span>
+              </div>
+              <li> <div class="counter">
+                <span class="num" data-val="500">000</span>
+                <span class="text">+Volunteers<br>Joined</span>
+              </div>
+              <li> <div class="counter">
+                <span class="num" data-val="1500">000</span>
+                <span class="text">+Total<br>Outreach</span>
+              </div>
+              <script src="/assets/js/Counter.js"></script></li>
+            </ul>
+          </div>
+          <br>
+          
+      </section> 
+      <section class="section3">
+        <div class="aboutus">
+          <img src="/assets/images/contact us.png" alt="">
+          <h1>ABOUT US</h1>
+          <br>
+          <h2>You Are Heard.</h2>
+          <p class="p1"> Aks Foundation was started in 2008 and is a registered NGO under the Societies Registration Act 1860 (Central) 
+            and under the Maharashtra Public Trusts Act 1950. Though primarily a Pune centric organization working in the 
+            area of gender based violence, domestic violence and sexual assault, Aks Foundation provides support to victims, 
+            from all over the country.</p>
+            
+            <p class="p2">On 15 August 2013, Aks Foundation launched 24 hour crisis lines for victims of abuse and violence and currently 
+            receives over 3000 calls a year.</p>
+            
+            <p class="p3">Aks Foundation also conducts community education and gender sensitization programs, talks and educational workshops
+             and has been instrumental in raising a voice against the social evil of violence against women and children.
+            </p>
+        </div>
+      </section>
+      
+      <section class="section4">
+        <div class="part4">
+        <div class="whatwedo">
+          <h1 style="text-align:center">What We Do</h1>
+          <h2 style="text-align:center">And How We Help the Cause</h2>
+        </div>
+    
+        <div class="container">
+          <div class="coli">
+            <img src="/assets/images/sakhi.png" alt="" class="sakhi">
+            <a href="https://sakhi.gov.in/home/login"><h3 style="text-align:center">Sakhi Dashboard</h3></a>
+         
+          </div>
+          <div class="coli">
+            <img src="/assets/images/nalsa.png" alt="" class="sakhi">
+            <a href="https://nalsa.gov.in/"><h3 style="text-align:center">NALSA</h3></a>
+            </div>
+
+    
+          <div class="coli">
+            <img src="/assets/images/durga.png" class="edited">
+            <a href="https://durgaindia.org/"><h3 style="text-align:center">Durga India</h3></a>
+          </div>
+          
+          <div class="coli">
+            <img src="/assets/images/ncw.png" alt="" class="edited">
+            <a href="http://ncw.nic.in/"><h3 style="text-align:center">National Commission for Women</h3></a>
+          </div>
+         
+          <div class="coli">
+            <img src="/assets/images/shelter.png" alt="" class="edited">
+            <a href="/home/shelter"><h3 style="text-align:center">Top Shelters</h3></a>
+          </div>
+    
+          <div class="coli">
+           <img src="/assets/images/police.png" alt="" class="edited">
+           <a href=""> <h3 style="text-align:center">Police Stations</h3></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section5">
+        <div class="part5">
+          <div class="column">
+            <h1><b>PARTNER</b></h1>
+            <img src="/assets/images/DSCE final logo.png">
+          </div>
+        </div>
+      </section>
+      <br>
+      
+      <section class="section6">
+        <div class="people"> <h1>What People Say About Us</h1>
+        </div>
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="/assets/images/test1.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="/assets/images/test2.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="/assets/images/test3.png" style="width:100%">
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="/assets/images/test4.png" style="width:100%">
+          </div>
+        
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <script>
+          let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+        </script>
+        </section>
+
+      <section class="section7">
+        <div class="part7">
+          <h1>Your Voice, Your Words.</h1>
+          <div class="cont">
+            <div class="col">
+              <img src="/assets/images/blog1.jpg" alt="">
+              <a href="/home/blog1"><h2 style="text-align:center">5 Ways to join the activism against gender based violence</h2></a>
+              
+            </div>
+            
+            <div class="col">
+              <img src="/assets/images/blog2.jpg" alt="">
+              <a href="/home/blog2"><h2 style="text-align:center">We need to talk about periods in a more inclusive way</h2></a>
+              
+            </div>
+            
+            <div class="col">
+              <img src="/assets/images/blog3.jpg" alt="">
+              <a href="/home/blog3"><h2 style="text-align:center">Men need to take responsibilty for the epidemic of men's violence</h2></a>
+              
+            </div>
+            
+            <div class="col">
+              <img src="/assets/images/blog4.jpg" alt="">
+              <a href="/home/blog4"><h2 style="text-align:center">The Indian married working women!</h2></a>
+              
+            </div>
+            <button type="button"><a href="/home/blog">Blogs</a> <i class="fa-solid fa-arrow-right"></i></button> 
+        </div>
+      </section>
+      <section class="section8">
+        <div class="part8">
+          <div class="image">
+          <img src="/assets/images/bottom1.png" alt="">
+        </div>
+        </div>
+      </section>
+      
+      <section class="section9">
+        <div class="part9">
+          <div class="footer">
+            <img src="/assets/images/logo.png" alt="" class="footing">
+            <h3 style="text-align:center">About Us</h3>
+    <p style="text-align:center">Kaali is a non profit organization aimed at fighting abuse against women and providing the means to fight for their rights.</p>
+    <p style="text-align:center">Be a part of the change. <a href="/donations/donation">Donate Now.</a></p>
+
+            <div class="icons">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <p>Kaali 2022.<i class="fa-solid fa-copyright"></i> All Rights Reserved. Made with <i class="fa-solid fa-heart"></i></p>
+            <br>
+          </div>
+
+        </div>
+      </section>
+
+      <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Kaali"
+  agent-id="ef613ea8-f8b4-45e4-ba59-8b9c048e1129"
+  language-code="en"
+></df-messenger>

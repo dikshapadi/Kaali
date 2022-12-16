@@ -1,0 +1,73 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/7aa1c87325.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/css/donation.css">
+    <link rel="stylesheet" href="/assets/css/transition.css" />
+    <style>
+      .center {
+        text-align: center;
+        width: 100%;
+      }
+    </style>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<section class="header">
+  <div class="header">
+    </div>
+    </section>
+    <section class="part1">
+    <div class="box">
+        <img src="/assets/images/donatecoin.png" alt="coins" />
+        <h2>Donate</h2>
+        <p>Support Us <br/>Donate below.</p>
+        
+        <div class="hi">
+          <h2>Select Payment Option :</h2>
+          <br>
+          <input type="radio" name="link" id="op1" value="Cash">Cash</input>
+          <input type="radio" name="link" id="op2" value="Cheque">Cheque</input><br>
+          <br>
+          <button class="button-1" onclick="Form()">CONFIRM</button>
+        </div>
+        
+    </div>
+</section>
+    
+    <script>
+        function Form() {
+          var rd1 = document.getElementById("op1");
+          var rd2 = document.getElementById("op2");
+          if (rd1.checked == true) {
+            window.open("/donations/offline", "_self");        
+            return true;
+          } else if (rd2.checked == true) {
+            window.open("/donations/cheque", "_self");
+            return true;
+          }
+          return false;
+        }
+      </script>
+    <section class="part2">
+        <div class="footer">
+          <img src="/assets/images/logo.png" alt="" class="footing">
+          <h3 style="text-align:center">About Us</h3>
+    <p style="text-align:center">Kaali is a non progit organization aimed at fighting abuse againts women and providing the means to fight for their rights.</p>
+    <p style="text-align:center">Be a part of the change. <a href="">Donate Now.</a></p>
+    
+          <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <p>Kaali 2022.<i class="fa-solid fa-copyright"></i> All Rights Reserved. Made with <i class="fa-solid fa-heart"></i></p>
+          <br>
+      </div>
+  </section>
