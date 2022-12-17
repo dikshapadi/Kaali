@@ -14,6 +14,6 @@
 	```sh
 	npm start
 	```
-6. Open browser and go to url: http://localhost:5100
+6. Open browser and go to url: http://localhost:5000
 7. You need to first signup and then login to run the application.
 
