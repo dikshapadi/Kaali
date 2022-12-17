@@ -76,6 +76,7 @@ form {
 .input-group {
     margin-bottom: 30px;
     position: relative;
+    color: white;
 }
 
 input,
