@@ -306,12 +306,7 @@ color: white;
       padding: 0;
       margin-bottom: 0;
     }
-    .whatwedo h1{
-      text-decoration: underline;
-    }
-    .whatwedo h2{
-      text-decoration: underline;
-    }
+   
     .sakhi{
       height: 150px;
       width: 150px;
@@ -355,7 +350,6 @@ color: white;
       font-weight: bold;
       margin-left: 490px;
       color: white;
-      text-decoration: underline;
       padding: 20px;
     }
     .part5 img{
@@ -390,7 +384,7 @@ color: white;
     .people h1{
       text-align: center;
       padding: 20px;
-      text-decoration: underline;
+      
     }
 
 /* Slideshow container */
