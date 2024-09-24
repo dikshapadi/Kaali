@@ -1,5 +1,6 @@
 # Kaali
 <img width="583" alt="image" src="https://github.com/user-attachments/assets/5e5b6fd8-9799-4ae7-89b3-88519e6325b5">
+
 Many women all over the country are unaware of their rights to freedom, safety and dignity. A large population of men, women and children do not know how to identify abuse. Many voices are shut down or aren't heard because they do not know where to ask for help. Every woman deserves happiness, dignity and self respect and has the right to fight for it. 
 Kaali , a web application is a one stop support platform for women victims of any form of abuse(physical , emotional, sexual) to reach out for help.
 
